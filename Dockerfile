@@ -14,7 +14,8 @@ RUN mvn package
 #FROM openjdk:8-jre-alpine3.8
 #WORKDIR /root/
 #COPY --from=builder /usr/src/myapp/target/app.jar .
-ADD /usr/src/myapp/target/app.jar /root/
-WORKDIR /root/
+#ADD /usr/src/myapp/target/app.jar /root/
+#WORKDIR /root/
+
 EXPOSE 8123
-ENTRYPOINT ["java", "-jar", "./app.jar"]
+ENTRYPOINT ["java", "-jar", "/usr/src/myapp/target/app.jar"]
