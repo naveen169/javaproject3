@@ -79,7 +79,7 @@
           <source>${java.version}</source>
           <target>${java.version}</target>
         </configuration>
-      </plugins>
+      </plugin>
            
      </distributionManagement>
       <snapshotRepository>
