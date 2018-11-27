@@ -113,7 +113,7 @@
         </executions>
       </plugin>
      
-    </plugins>
+   <distributionManagement> 
   </build>
-</distributionManagement>
+
 </project>
