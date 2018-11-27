@@ -111,9 +111,7 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
-     
+      </plugin>     
    <distributionManagement> 
   </build>
-
 </project>
