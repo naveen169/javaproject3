@@ -80,7 +80,14 @@
           <target>${java.version}</target>
         </configuration>
       </plugin>
-
+     </distributionManagement>
+      <snapshotRepository>
+      <id>nexus</id>
+      <name>nexus</name>
+      <url>http://localhost:8091/repository/demoproject-snapshot/</url>
+      </snapshotRepository>
+    </distributionManagement>
+      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
